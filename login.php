@@ -1,3 +1,7 @@
+<style>
+<?php include_once 'style.css'; ?>
+</style>
+
 <div class="wrapper">
     <div class="form">
         <form class="login-form" action="signup.inc.php" method="post">
