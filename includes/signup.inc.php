@@ -1,7 +1,5 @@
 <?php
 
-include_once '../dbh.inc.php';
-
 if (isset($_POST["submit"])) {
   $name = $_POST["name"];
   $email = $_POST["email"];

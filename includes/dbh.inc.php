@@ -1,5 +1,7 @@
 <?php
 
+// localhost:8080 ???
+
 $serverName = "localhost";
 $dBUsername = "root";
 $dBPassword = "";
