@@ -1,5 +1,7 @@
 <?php
 
+include_once '../dbh.inc.php';
+
 function emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) {
   $result; 
   if (empty($name) || empty($email) || empty($username) || empty($pwd) ||empty($pwdRepeat)) {
