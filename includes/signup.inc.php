@@ -1,4 +1,5 @@
-<?php
+<?php ini_set("display_errors", 1);
+// ini_set displays errors in the browser
 
 if (isset($_POST["submit"])) {
   $name = $_POST["name"];

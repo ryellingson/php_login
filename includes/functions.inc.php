@@ -52,7 +52,8 @@ function uidExists($conn, $username, $email) {
   mysqli_stmt_bind_param($stmt, "ss", $username, $email);
   mysqli_stmt_execute($stmt);
 
-  $resultData = mysqli_stmt_get_result();
+  // the method was empty and that was causing a 500 error
+  $resultData = mysqli_stmt_get_result($stmt);
 
   if ($row = mysqli_fetch_assoc($resultData)) {
     return $row;
