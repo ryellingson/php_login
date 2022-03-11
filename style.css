@@ -17,6 +17,13 @@ a {
   width: 80%;
 }
 
+.error-notice {
+  background: red;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
 .wrapper {
   width: 360px;
   padding: 8% 0 0;

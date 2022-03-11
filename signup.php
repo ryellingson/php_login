@@ -12,6 +12,27 @@
             <div class="buttons">
                 <button type="submit" name="submit">Sign Up</button>
             </div>
+            <?php
+              if (isset($_GET["error"])) {
+                if ($_GET["error"] == "emptyinput") {
+                  echo "<p class=\"error-notice\">Fill in all fields</p>";
+                } else if ($_GET["error"] == "invaliduid") {
+                  echo "<p class=\"error-notice\">Choose a proper username</p>";
+                } else if ($_GET["error"] == "invalidemail") {
+                  echo "<p class=\"error-notice\">Choose a proper email</p>";
+                } else if ($_GET["error"] == "passwordsdontmatch") {
+                  echo "<p class=\"error-notice\">Passwords do not match</p>";
+                } else if ($_GET["error"] == "stmtfailed") {
+                  echo "<p class=\"error-notice\">Something went wrong, try again!</p>";
+                } else if ($_GET["error"] == "usernametaken") {
+                  echo "<p class=\"error-notice\">Username taken</p>";
+                } else if ($_GET["error"] == "none") {
+                  echo "<p class=\"error-notice\">Sign up successful!</p>";
+                }
+              }
+            ?>
         </form>  
     </div>
 </div>
+
+
