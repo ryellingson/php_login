@@ -9,7 +9,7 @@
 
 <div class="wrapper">
     <div class="form">
-        <div class="login-form" action="includes/login.inc.php" method="post">
+        <div class="login-form">
           <div class="title">
             Profile Page
           </div>
@@ -18,6 +18,11 @@
               echo "Welcome: {$_SESSION["useruid"]}";
             ?>
           </div>
+          <a href="includes/logout.inc.php">
+            <div class="buttons">
+              <button type="submit" name="submit">Log Out</button>
+            </div>
+          </a>
         </div>  
     </div>
 </div>

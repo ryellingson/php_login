@@ -11,6 +11,11 @@
             <input type="password" name="pwdrepeat" placeholder="repeat password" required />
             <div class="buttons">
                 <button type="submit" name="submit">Sign Up</button>
+                <a href="index.html">
+                  <div class="button-link">
+                    Go Back
+                  </div>
+                </a>
             </div>
             <?php
               if (isset($_GET["error"])) {
@@ -27,7 +32,7 @@
                 } else if ($_GET["error"] == "usernametaken") {
                   echo "<p class=\"error-notice\">Username taken</p>";
                 } else if ($_GET["error"] == "none") {
-                  echo "<p class=\"error-notice\">Sign up successful!</p>";
+                  echo "<p class=\"success-notice\">Sign up successful!</p>";
                 }
               }
             ?>
