@@ -26,7 +26,7 @@ try {
 	echo "Exception: " . $e->getMessage();
 }
 
-$loggableConfigVariable = $config;
+$loggableConfigVariable = $cleardb_url;
 
 unset($loggableConfigVariable['pass']);
 
