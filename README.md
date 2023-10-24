@@ -2,8 +2,6 @@
 
 # Sign up and log in with PHP, Apache, and MySQL
 
-### Check out the [LIVE DEMO](https://php-signup-login.herokuapp.com/), hosted on Heroku
-
 (Click on any of the images below to enlarge them.)
 
 The desired behavior is fairly simple. A user signs up, their details are saved to the database, and then the user is able log in with the details.
